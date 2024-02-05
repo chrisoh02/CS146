@@ -1,1 +1,10 @@
+The first step was to copy the contents of the array to a Hashmap
+The key for the hashmap would be the integer value
+The value is the index of that integer in the array
 
+The second step is to iterate through the keys of the hashmap
+If the target number minus the key (integer value) exists as a key different to the current key, 
+that means that there exists a number in the array that equals the target when added to the key
+
+At that point we can simply return the values (indexes) of the two keys found
+If no key-pairs are found that add up to the target, we state that no solution was found
