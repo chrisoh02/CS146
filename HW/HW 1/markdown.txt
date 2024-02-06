@@ -1,1 +1,18 @@
+Java Explanation
+Create an empty string called filtered to store only the alphanumeric characters
+Iterate through each character of String s
 
+if the character is a lowercase letter or a number, add it to filtered
+else if the character is an uppercase letter add the lowercase version of it to filtered
+
+Then iterate halfway through the filtered string
+Compare each character with the equidistant character from the other end
+ex) compare the 1st character to the last character, compare the 2nd character to the 2nd to last character
+if any don't match, break and return false
+
+Python Explanation
+Same concept but with library
+Set the input string to lowercase
+Then use Python's regular expressions to remove all characters that aren't in 'a'-'z' or '0'-'9'
+Create another string which is the new filtered string backwards
+return if the two strings match
