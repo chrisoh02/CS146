@@ -31,6 +31,8 @@ public class Palindrome {
         }
         return true;
     }
+
+    //unused
     public static boolean isAlphabet (Character c) {
         if (c >= 'a' && c <= 'z') return true;
         if (c >= 'A' && c <= 'Z') return true;
