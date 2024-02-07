@@ -1,1 +1,14 @@
+Homework 2
+
+The overall strategy is to use binary search to find the first bad version in log(n) time.
+We start by defining a search space, or the minimum and maximum index the target could be found in. 
+In the beginning, that is the 0th index to the last index.
+
+In a while loop, we check the middle of the search space: mid = ((min + max) / 2.
+If that version is bad, we know that the target must either be that version or a version before it.
+So we can simply adjust the search space so that max = mid.
+
+If that version isn't bad, we know that the target must be a new version, so we update the search space to be min = mid + 1.
+
+The while loop stops when minimum and maximum are equal to each other. This means the search space has been narrowed down 1 version.
 
