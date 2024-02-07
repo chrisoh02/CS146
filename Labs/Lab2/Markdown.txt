@@ -1,1 +1,15 @@
 Lab 2
+
+First, we compare the lengths of strings s and t. If they are not equal, return false.
+
+To determine if two strings are anagrams, the code creates hashmaps for each string.
+The key is a character and value is an int that stores how many times that character appears. 
+
+Let's call them sMap and tMap for strings s and t respectively. 
+
+We then iterate through every character in string s. 
+If we see a character that's not in sMap, we add it with a value of 1.
+If the character is already in sMap, we increment the value of the key by 1.
+Because we already checked to see if the lengths are equal, we can do the same for t & tMap in the same loop.
+
+Then we simply return whether or not sMap and tMap are equal.
