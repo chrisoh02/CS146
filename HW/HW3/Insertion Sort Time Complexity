@@ -1,0 +1,11 @@
+Insertion Sort Time Complexity
+Pseudo Code:
+def insertionSort (arr)                        // size of array = n
+  int i = 1                                    // 1 time
+  while (i < arr.length)                       // n times 
+    int j = 1                                  // 1 time
+    while j > 0 and arr[j - 1] > arr[j]         
+      swap arr[j - 1] and arr[j]
+      j--
+    i++
+  
