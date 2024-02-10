@@ -12,22 +12,3 @@ def insertionSort (arr)                        // size of array = n
   
 The growth of insertion sort is quadratic. 
 The nested while loops mean that the function grows at quadratic rate.
-
-Best Case Scenario
-Array is already sorted
-The nested while loop on line 8 will only trigger once
-O(n)
-Ω(n)
-Θ(n)
-
-Worst Case Scenario
-Array is in reverse order
-O(n^2)
-Ω(n^2)
-Θ(n^2)
-
-Average Case Scenario
-Array is shuffled in random order
-O(n^2)
-Ω(n^2)
-Θ(n^2)
