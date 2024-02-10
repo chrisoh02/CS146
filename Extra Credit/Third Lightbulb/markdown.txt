@@ -1,2 +1,10 @@
 Bonus Questions: "Third lightbulb's the charm"
 nth term in the Fibonacci Sequence
+
+Keep track of the two last numbers in the sequence, a and b respectively
+at each loop,
+a = b
+b = a + b (will need to store a in a temp variable first)
+
+lastly, return a
+
