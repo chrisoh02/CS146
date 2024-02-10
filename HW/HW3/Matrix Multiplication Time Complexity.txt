@@ -16,22 +16,4 @@ MATRIX_MULTIPLY(A, B):
         sum ← sum + A[i][k] * B[k][j]                           // n^3 times
       result[i][j] ← sum return result                          // n^3 times
 
-Time complexity: n^3, cubic
-3 nested for loops has the function growing at cubic rate.
-
-Best Case Scenario:
-Matrix A and B are both 1x1 or columns(A) != rows(B)
-O(1)
-Ω(1)
-Θ(1)
-
-Worst Case Scenario:
-O(n^3)
-Ω(n^3)
-Θ(n^3)
-
-Average Case Scenario:
-O(n^3)
-Ω(n^3)
-Θ(n^3)
 
