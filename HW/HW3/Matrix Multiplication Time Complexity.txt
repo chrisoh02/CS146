@@ -16,4 +16,4 @@ MATRIX_MULTIPLY(A, B):
         sum ← sum + A[i][k] * B[k][j]                           // n^3 times
       result[i][j] ← sum return result                          // n^3 times
 
-
+The function is cubic, there are 3 nested for loops of constant size
