@@ -21,9 +21,13 @@ Time complexity: n^3, cubic
 
 Best Case Scenario:
 Matrix A and B are both 1x1 or columns(A) != rows(B)
+If colmnuns(A) != rows(B), then the function ends immediately, giving us constant time.
+Other wise, if both matrices are 1x1, then n = 1 and so all the lines will only execute once
 O(1)
 Ω(1)
 Θ(1)
+
+
 
 Worst Case Scenario:
 O(n^3)
