@@ -21,7 +21,7 @@ O(n)
 Θ(n)
 
 Worst Case Scenario
-Array is in reverse order
+Array is in reverse order, therefore the while loop will have to loop for the full range
 O(n^2)
 Ω(n^2)
 Θ(n^2)
