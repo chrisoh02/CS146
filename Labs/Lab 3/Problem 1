@@ -1,1 +1,12 @@
+1. 10000000000n^2 vs n^3
+n^3 is greater because cubic functions grow faster than quadratic functions, regardless of the co-efficient
 
+2. (n^2)log(n) vs n(log(n))^10
+We can divide both sides by nlog(n) to simply the comparison to n vs log(n)^9
+
+3. n^log(n) vs 2^sqrt(n)
+
+4. 2^n vs 2^(2n)
+2^(2n) is greater
+We can take the log base 2 of both sides: log(2^n) vs log(2^(2n)) to get n vs 2n
+2n is asymptotically greater than n
