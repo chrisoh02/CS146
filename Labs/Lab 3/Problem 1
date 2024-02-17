@@ -24,6 +24,7 @@ This simplifies to log(n)^4 vs n
 As discussed in question 2, if the power is greater than the base of the log, in our case 4 and 2 respectivily, it grows faster than n.
 
 
+
 4. 2^n vs 2^(2n)
 2^(2n) is greater
 
