@@ -6,6 +6,10 @@ Cubic functions grow faster than quadratic functions, regardless of the co-effic
 We can divide both sides by nlog(n) to simply the comparison to n vs log(n)^9
 
 3. n^log(n) vs 2^sqrt(n)
+Take log base 2 of both sides, such that log(n^log(n)) vs log(2^sqrt(n))
+This simplifies to log(n)^2 vs sqrt(n)
+We can square both sides such that (log(n)^2))^2 vs (sqrt(n))^2
+This simplifies to log(n)^4 vs n
 
 4. 2^n vs 2^(2n)
 2^(2n) is greater
