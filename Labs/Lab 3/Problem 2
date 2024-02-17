@@ -1,1 +1,15 @@
+Pseudo Code
+isPrime(n):                        // 1 time
+  for(i = 2, i*i <= n; i++) {      // sqrt(n) times
+    if(n % i == 0) {               // sqrt(n) times
+      return false                 // 1 time
+    }
+  return true                      // 1 time
 
+Best Case Scenario: n is even
+The function immediately returns false because n is divisible by i (i = 2).
+
+
+Worst Case Scenario
+
+Average Case Scenario
