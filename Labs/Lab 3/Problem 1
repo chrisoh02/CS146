@@ -6,19 +6,38 @@ Cubic functions grow faster than quadratic functions, regardless of the co-effic
 
 
 2. (n^2)log(n) vs n(log(n))^10
+(n^2)log(n) is greater
 
 We can divide both sides by nlog(n) to simply the comparison to n vs log(n)^9
 
+Let's say that f(n) = log(n)^9 and g(n) = n
+If g(n) is asymptotically greater than f(n), then the limit f(n)/g(n) = 0 as n approaches infinity.
+Because f(n) and g(n) both approach postive infinity as n approaches infinity, we can apply L'Hôpital's rule.
+
+To make future calculations easier, we will rewrite f(n) as (ln(n)^9)/(ln(2)^9), and as we're dealing with limits, we can ignore the denominator because it is a constant.
+So we will say that f(n) = ln(n)^9 for future purposes.
+
+f'(n) = (9ln(n)^8 )/n and g'(n) = 1, which means that f'(n)/g'(n) = f'(n)
+Note that both f(n)/g(n) and f'(n)/g'(n) have n as the denominator. 
+This means that we can follow the same steps. This time let's say that f(n) = 9ln(n)^8 and that g(n) = n. We will also ignore the co-efficient in f(n) and say that it is ln(n)^8.
+L'Hôpital's rule still applies, so we can repeat the same logic by inductive reasoning.
+This simplifies until the limit = 1/n.
+The limit of 1/n as n approaches infinity equals 0.
+Thus g(n) must be asymptotically greater than f(n).
 
 
 
 3. n^log(n) vs 2^sqrt(n)
+2^sqrt(n) is greater
 
 Take log base 2 of both sides, such that log(n^log(n)) vs log(2^sqrt(n))
 This simplifies to log(n)^2 vs sqrt(n)
 We can square both sides such that (log(n)^2))^2 vs (sqrt(n))^2
 This simplifies to log(n)^4 vs n
 
+We can use the same reasoning that we used in problem 2.
+The only difference is that f(n) = log(n)^4 instead of log(n)^9, but note that in our solution f(n) = log(n)^4 would've been a step while solving problem 2.
+We can say that n is greater than log(n)^9 as n approaches infinity.
 
 
 4. 2^n vs 2^(2n)
