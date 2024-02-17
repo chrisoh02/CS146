@@ -1,5 +1,6 @@
 1. 10000000000n^2 vs n^3
-n^3 is greater because cubic functions grow faster than quadratic functions, regardless of the co-efficient
+n^3 is greater 
+Cubic functions grow faster than quadratic functions, regardless of the co-efficient
 
 2. (n^2)log(n) vs n(log(n))^10
 We can divide both sides by nlog(n) to simply the comparison to n vs log(n)^9
