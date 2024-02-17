@@ -1,15 +1,28 @@
 1. 10000000000n^2 vs n^3
 n^3 is greater 
+
 Cubic functions grow faster than quadratic functions, regardless of the co-efficient
 
+
+
 2. (n^2)log(n) vs n(log(n))^10
+n(log(n))^10 is asymptotically greater
+
 We can divide both sides by nlog(n) to simply the comparison to n vs log(n)^9
+For log(n)^9, the exponent, 9, is greater than the base of the log, 2. 
+If the power is greater than the base, it grows faster than n.
+
+
 
 3. n^log(n) vs 2^sqrt(n)
+n^log(n) s greater
+
 Take log base 2 of both sides, such that log(n^log(n)) vs log(2^sqrt(n))
 This simplifies to log(n)^2 vs sqrt(n)
 We can square both sides such that (log(n)^2))^2 vs (sqrt(n))^2
 This simplifies to log(n)^4 vs n
+As discussed in question 2, if the power is greater than the base of the log, in our case 4 and 2 respectivily, it grows faster than n.
+
 
 4. 2^n vs 2^(2n)
 2^(2n) is greater
