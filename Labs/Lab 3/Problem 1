@@ -26,5 +26,6 @@ As discussed in question 2, if the power is greater than the base of the log, in
 
 4. 2^n vs 2^(2n)
 2^(2n) is greater
+
 We can take the log base 2 of both sides: log(2^n) vs log(2^(2n)) to get n vs 2n
 2n is asymptotically greater than n
