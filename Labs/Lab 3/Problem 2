@@ -8,8 +8,16 @@ isPrime(n):                        // 1 time
 
 Best Case Scenario: n is even
 The function immediately returns false because n is divisible by i (i = 2).
+O(1)
+Ω(1)
+Θ(1)
 
+Worst Case Scenario: n is a large prime number
+O(sqrt(n))
+Ω(sqrt(n))
+Θ(sqrt(n))
 
-Worst Case Scenario
-
-Average Case Scenario
+Average Case Scenario: n is some number, might be even might be odd, but most likely won't have to finish the entire loop
+O(sqrt(n))
+Ω(sqrt(n))
+Θ(sqrt(n))
