@@ -1,1 +1,18 @@
+1. T(N) = 2T(N-1) + 1
+T(N - 1) = 2T(n - 2) + 1
+T(N - 2) = 2T(n - 3) + 1
 
+T(n) = 2(2T(n-2) + 1) + 1 = 4T(n - 2) + 3
+T(n) = 4(2T(n - 3) + 1) + 3
+T(n) = 8T(n-3) + 7
+
+T(n) = (2^k)T(n - k) + (2^k) - 1
+
+If n - k = 0
+n = k
+T(n) = 2T(0) + 1
+T(n) = 2 + 1 = 3
+
+Time complexity: Θ(1)  
+
+Master theorem, a = 2, a > 1 so O(n^ 
