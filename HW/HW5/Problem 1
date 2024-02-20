@@ -19,7 +19,7 @@ Time complexity: Θ(2^n)
 2. T(N) = 3T(N-1) + n 
 Decreasing function
 a = 3, a > 1
-f(n) = n = O(n^1)
+f(n) = n = n^1, k = 1
 O((n^1) * a^(n/1)) = O(n*3^n)
 
 Time Complexity: Θ(n(3^n))
