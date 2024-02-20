@@ -43,11 +43,23 @@ f(n) = n^(log2(cn) + 1), k = log2(cn) + 1
 log2(100) = 6.64 (approx)
 
 Comparing k with log2(100)
-log2(cn) + log2(2) = log2(100) 
-log2(cn) = log2(100) - log2(2) = log2(50)
-2^log2(cn) = 2^log2(50)
-cn = 50
+log2(cn) + log2(2) ?= log2(100) 
+log2(cn) ?= log2(100) - log2(2) ?= log2(50)
+2^log2(cn) ?= 2^log2(50)
+cn ?= 50
 
+this method doesn't seem to work because k needs to be a constant
+
+T(N) = 100T(N/2) + n^(log2(cn) + 1)
+T(N/2) = 100T(N/4) + n^(log2(cn) + 1)
+T(n/4) = 100T(n/8) + n^log2(cn) + 1)
+
+T(N) = 100[100T(N/4) + n^(log2(cn) + 1)] + n^(log2(cn) + 1)
+T(N) = 100[100[100T(n/8) + n^log2(cn) + 1)] + n^(log2(cn) + 1)] + n^(log2(cn) + 1)
+
+Function scales by n^(log2(cn) + 1)
+
+Time Complexity: O(n^(log n))
 
 5. T(N) = 4T(N/2) + (n^2)(log n)
 a = 4, a >= 1
