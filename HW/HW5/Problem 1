@@ -10,10 +10,10 @@ T(n) = (2^k)T(n - k) + (2^k) - 1
 
 If n - k = 0
 n = k
-T(n) = 2T(0) + 1
-T(n) = 2 + 1 = 3
+T(n) = 2^nT(0) + 2^n - 1
+T(n) = 2(2^n) = 2^(n + 1)
 
-Time complexity: Θ(1)  
+Time complexity: Θ(2^n)  
 
 
 2. T(N) = 3T(N-1) + n 
