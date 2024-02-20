@@ -30,9 +30,20 @@ Divide and Conquer
 a = 9, a >= 1
 b = 2, b > 1
 f(n) = n^2, k = 2
-log2(9) = 3.17 > 2
+log2(9) = 3.17 (approx) > 2
 
-Time Complexity: Θ(n^log2(9))
+Time Complexity: Θ(n^log2(9)), or roughly Θ(n^3.17)
+
 
 4. T(N) = 100T(N/2) + n^(log2(cn) + 1)
+Divide and Conquer
+a = 100, a >= 1
+b = 2, b > 1
+f(n) = n^(log2(cn) + 1), k = log2(cn) + 1
+log2(100) = 6.64 (approx)
 
+Comparing k with log2(100)
+log2(cn) + log2(2) = log2(100) 
+log2(cn) = log2(100) - log2(2) = log2(50)
+2^log2(cn) = 2^log2(50)
+cn = 50
