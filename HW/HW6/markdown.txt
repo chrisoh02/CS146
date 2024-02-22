@@ -1,2 +1,13 @@
-Step one is to create a HashSet that will hold all the triples
-This will later be 
+Step one is to create a Hashset that will hold all the triples
+A Hashset will prevent duplicate triplets from being added
+This will later be converted to a List to fit the criteria
+
+Next, sort the array, this will allow for binary search later on
+
+Create a nested for loop like so:
+for (i = 0; i <  num.length - 1; i++):
+  for (int j = 0; j < num.length - 2; j++):
+
+i and j will be all the unique index pairs from nums[]
+
+
