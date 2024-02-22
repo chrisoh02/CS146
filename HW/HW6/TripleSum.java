@@ -15,7 +15,7 @@ public class TripleSum {
     public List<List<Integer>> threeSum (int[] nums) {
         if (nums.length < 3 || nums.length > 3000) {
             System.out.println("Invalid array size");
-            return null;
+            return new ArrayList<>();
         }
         List<List<Integer>> triplets = new ArrayList<>(); //triplets to be returned
         ArrayList<Integer> temp;
