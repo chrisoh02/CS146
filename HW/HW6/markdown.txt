@@ -1,1 +1,2 @@
-
+Step one is to create a HashSet that will hold all the triples
+This will later be 
