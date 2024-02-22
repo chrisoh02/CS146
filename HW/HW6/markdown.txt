@@ -10,4 +10,12 @@ for (i = 0; i <  num.length - 1; i++):
 
 i and j will be all the unique index pairs from nums[]
 
+Find the remaining value that will complete the triplet 
+int third = -(nums[i] + nums[j])
+
+Use binary search to find if that third value exists within the array between indices j + 1 to the end of the array
+
+If that value does exist, add the triple to the Hashset (hashset prevents duplicate triplets)
+
+Add all of the triplets from the Hashset to the List of triplets and return
 
