@@ -1,1 +1,15 @@
+We will have a HashMap called "freq" that keeps track of how many times a character appears in a string
+We will keep the length of the palindrome under the variable "length"
 
+In a for loop that iterates through every character in the string
+
+If our Hashmap already contains that character, we increment the character's count by 1
+  If that character has appeared an even amount of times, we know that it can appear twice in our palindrome, so increment length by 2
+  We then set the character's count to 0
+
+If our Hashmap doesn't already contain the character, we add the character to the map with a count of 1
+
+After we exit the loop, we check our map to see if there is any character with a count of 1
+If there is, that means we can place that character at the center of our palindrome, so we increment length by 1
+
+Return length
