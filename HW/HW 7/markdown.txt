@@ -1,1 +1,14 @@
+We will keep a list of rooms
+Each room is a list that holds intervals such that none overlap
+For example, room 1 = [[0,1][1,2][4,7]]
+Each room will be sorted (no need to actually sort it, the way the intervals will be added will keep it sorted)
+This list is initalized with one empty room
 
+For each interval, loop through every existing room
+If the room is empty, add the interval
+If the interval ends before the first meeting add the interval to the very beginning
+If the interval fits inbetween 2 existing meetings, then add that meeting inbetween them
+If the interval starts after the last meeting ends, add the meeting to the end
+If none of these criteria were met, make a new room, add the interval to that room and add that room to the list.
+
+Return the number of rooms in the list.
