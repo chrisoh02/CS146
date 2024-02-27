@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Solution2 {
     public Solution2 () {}
 
-    public int minMeetingRooms (int[][] intervals) {
+    public int minMeetingRooms(int[][] intervals) {
         if (intervals == null || intervals.length == 0) {
             return 0;
         }
