@@ -1,1 +1,10 @@
+Yes priority queues can be implemented with heaps. 
+A particular point of priority queues is the ability to access the highest priority element.
+This can easily be achieved using a max-heap, where if the elements are compared by their priority, the highest priority element will always be at the top.
+Because the heap will automatically call heapify every time an element is removed, popping to the top element will always leave the next highest priority element as the new index 0.
 
+To change a max heap to a min heap or vice versa, we only require one step. 
+During the initialization process, we can we the comparison tool to negative, for example in Java with a heap of integers we could say Comparison.comparing((a,b) -> -Integer.compare(a,b))
+
+References
+https://www.geeksforgeeks.org/priority-queue-set-1-introduction/ 
