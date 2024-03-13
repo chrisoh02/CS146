@@ -1,1 +1,25 @@
+HW 10
 
+Each list in the list is its own level
+ex)
+[
+[4], level 0
+[3,8], level 1
+[1,5,9], level 2
+]
+
+So we can think of the index of a list as its level
+
+Therefore, if we create a helper function which passes a node, our output list, and the level which the node is at, we can simply add that node to the list on index level of our output list.
+
+So if we have a node at level 3, we can say output_list[3].append(node.val)
+
+So we just have to make sure that every time we call the helper function that 
+A: the node exists
+B: input the level where the node is
+
+To make sure we do not have an index out of bounds error, at the beginning of the helper function we can check if (level - 1 > output_list.size). If that is the case, simply add levels to the list until that condition is met.
+
+Our helper function will recursivily call itself. If it has a left child, it will pass the left child, the output_list, and level + 1 through as the parameters. Same for left child.
+
+The levelOrder() function will call the helper function with (root, output_list, 0) as the parameters. It will check if root exists before doing so.
