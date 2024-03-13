@@ -8,7 +8,7 @@ class Solution:
     def __init__(self):
         print("HW 10")
 
-    def levelOrder(self, root: Optional[TreeNode]) -> List[List[int]]:
+    def levelOrder(self, root) -> List[List[int]]:
         nodes_by_level = []
 
         if root is not None:
