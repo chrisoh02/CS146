@@ -1,1 +1,20 @@
+For all these examples, the nodes will just be integers.
 
+Adjacency List to Matrix
+For every edge in the adjacency list, we can consider the first vertex to be the row and the second vertex to be the column.
+We can create a 2D boolean array that has the same amount of rows/columns as the number of nodes.
+After than, we can simply iterate through every edge in the list and set that index within the matrix as true.
+example: matrix[edge[0]][edge[1]]
+
+Matrix to Adjacency List
+We can iterate through the matrix in a nested loop. For every index that returns true, we know that an edge exists. We can then add the row and column of that edge to an adjacency list.
+example: list.add({row, column})
+
+Reversing Edges in an Adjacency List
+We first create an empty adjacency list that will hold all the reverse edges.
+We can then iterate through the adjacency list and add the reverse of each edge to the empty list.
+example: reverse_list.add( {edge[1], edge[0]} )
+
+Reversing Edge in a Matrix
+We first create an empty matrix of the same size as the original. We can then iterate through the original and add the value of each index to the opposite row/column index.
+example: reverse_matrix[column][row] = matrix[row][column]
