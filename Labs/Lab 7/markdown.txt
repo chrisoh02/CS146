@@ -1,1 +1,4 @@
+We will use Floyd-Warshall's algorithm to create a a matrix reprsentation of the edges.
+The matrix will hold the length of the shortest path from node A to node B.
 
+With that matrix, we can check if a city is within a certain distance and use that count to find the city with least amount of neighbors.
