@@ -1,1 +1,10 @@
+Problem: optimize water distribution in a village
 
+The basic idea is to create a minimum spanning tree for our village.
+
+However, we can't just do a MST because the houses can also have wells. These wells might be cheaper than adding a pipe.
+
+We can treat the cost of a well for each house as an edge. We create a dummy edge that connects to every single house. 
+The weight of the edge is the cost of the well.
+
+From there we can simply run Kruskal's algorithm to find the MST and then return the total cost.
